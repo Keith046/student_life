@@ -193,8 +193,38 @@
             </a>
             <ul class="nav nav-treeview" style="display: none;">
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="{{ route('clubs.index') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
+                  <p>View</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+            <i class="fas fa-chalkboard-teacher"></i>
+              <p>
+                Tutoring
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+                <a href="{{ route('tutor.create') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sign up</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('tutoring_session.index') }}" class="nav-link">
+                <i class="fas fa-book"></i>
+                  <p>Tutoring Session</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('tutor.index') }}" class="nav-link">
+                <i class="fas fa-book"></i>
                   <p>View</p>
                 </a>
               </li>

@@ -25,8 +25,8 @@ class CreateHousingsTable extends Migration
             $table->string('status');
             $table->decimal('price');
             $table->string('image')->default('apartment.png');
-            $table->decimal('latitude');
-            $table->decimal('longitude');
+            $table->decimal('latitude')->nullable();;
+            $table->decimal('longitude')->nullable();;
             $table->timestamps();
 
             $table->foreign('landlord_id')->references('id')->on('users')

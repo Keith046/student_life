@@ -143,7 +143,49 @@
               </p>
             </a>
           </li>
-        </ul>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+            <i class="fas fa-users"></i>
+              <p>
+                Student Clubs
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              <li class="nav-item">
+                <a href="{{ route('clubs.create') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sign-up</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('clubs.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>View Clubs</p>
+                </a>
+              </li></ul>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+               <i class="fas fa-bus-alt"></i>
+              <p>
+                Transportation
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+                <a href="{{ route('transportation.create') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Create Schedule</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('transportation.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>View Schedule</p>
+                </a>
+              </li>
+        </ul> </ul>
         
       </nav>
       <!-- /.sidebar-menu -->

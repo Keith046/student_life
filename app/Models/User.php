@@ -56,5 +56,15 @@ class User extends Authenticatable
     	return $this->hasMany [Housing::class];
     
     }
-   
+    public function student()
+    {
+    	return $this->hasMany [Tutoring::class];
+    
+    }
+    public function sludents()
+    {
+    	return $this->hasMany [Clubs::class];
+    
+    }
+    
 }
